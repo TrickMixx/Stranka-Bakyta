@@ -9,7 +9,7 @@ body {
 
 nav {
   background-color: #333;
-  padding: 15px;
+  padding: 30px;
   text-align: center;
 }
 
@@ -18,7 +18,7 @@ nav a {
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
-  font-size: 18px;
+  font-size:30px;
 }
 
 nav a:hover {
@@ -34,6 +34,7 @@ nav a:hover {
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+  font-size: 30px
 }
 
 h1 {
@@ -69,9 +70,29 @@ h1 {
 
 footer {
   margin-top: auto;
-  background-color: #b9b9b9;
+  background-color: #333;
   padding: 25px;
   font-size: 30px;
   text-align: center;
   border-top: 3px solid black;
+  position: absolute;
+  bottom: 0;
+  width: 100%
+ 
 }
+
+.footericon {
+  height: 40px;
+  margin-right: 10px;
+  fill: white !important;
+  filter: invert(1);
+  }
+  
+  .footericon-link {
+    color: black;
+    text-decoration: none;
+  }
+
+  .footercopyright {
+    color: white;
+  }
