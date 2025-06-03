@@ -1,11 +1,14 @@
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #f9f9f9;
     color: #333;
     width: 100dvw;
-    height: 1000px;
+    height: 100dvh;
 }
 
 nav {
@@ -42,14 +45,13 @@ nav a:hover {
     text-align: center;
     font-size: 30px;
     height: auto;
-
 }
 
 .o-mne {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: left   ;
+    align-items: left;
     justify-content: center;
     padding: 40px;
     text-align: center;
@@ -69,13 +71,17 @@ nav a:hover {
     height: auto;
 }
 
-h1 {
+.index h1, .container h1 {
     font-size: 4vh;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
-p {
+.container h2 {
+    font-size: 3vh;
+}
+
+.index p, .container p {
     font-size: 2vh;
     max-width: 50vh;
 }
@@ -111,14 +117,12 @@ p {
 }
 
 .footer {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    bottom: 0;
     width: 100%;
-    height: 5rem;
+    height: auto;
     background-color: #333;
     padding: 25px 0;
 }
@@ -160,8 +164,8 @@ form {
   line-height: 1.6;
 }
 .container {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2rem;
 }
-
